@@ -4,14 +4,14 @@
   Replace every [BRACKET]. Delete this comment.
 -->
 
-# Hi, I'm [YOUR NAME] 👋
+# Hi, I'm Sreeram Pasham 👋
 
 **Freelance Cloud Architect & DevSecOps Engineer**
 
 I design and build secure, compliance-ready platforms on AWS: multi-account architecture, Kubernetes (EKS) platforms, identity federation, and Infrastructure as Code with security built into the pipeline.
 
-📍 [City / Remote] · 📫 [email] · 🔗 [LinkedIn] · 🌐 [website, optional]
-🟢 **Currently available for freelance projects** ([hours/week], starting [date])
+📍 Chantilly/Remote · 📫 devopseng@snteks.com · 🔗 [LinkedIn] · 🌐 [website, optional]
+🟢 **Currently available for freelance projects** (25/week, starting ASAP)
 
 ---
 
