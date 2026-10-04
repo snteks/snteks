@@ -10,8 +10,8 @@
 
 I design and build secure, compliance-ready platforms on AWS: multi-account architecture, Kubernetes (EKS) platforms, identity federation, and Infrastructure as Code with security built into the pipeline.
 
-📍 Chantilly/Remote · 📫 devopseng@snteks.com · 🔗 [LinkedIn] · 🌐 [website, optional]
-🟢 **Currently available for freelance projects** (25/week, starting ASAP)
+📍 Chantilly / Remote · 📫 devopseng@snteks.com · 🔗 [LinkedIn] · 🌐 [website, optional]
+🟢 **Currently available for freelance projects** (30hours/week, starting ASAP)
 
 ---
 
@@ -19,12 +19,12 @@ I design and build secure, compliance-ready platforms on AWS: multi-account arch
 
 | | |
 |---|---|
-| ☁️ **Cloud architecture** | Multi-account AWS design, VPC / Transit Gateway networking, private-by-default connectivity |
+| ☁️ **Cloud architecture** | Multi-account AWS design, VPC / Transit Gateway networking, private-by-default connectivity, CloudFront + WAF edge delivery |
 | 🔐 **DevSecOps** | Policy as code, zero-secret-in-git, OIDC-federated CI/CD, least-privilege IAM, NIST 800-53 control mapping |
 | ☸️ **Platform engineering** | EKS, Cilium, Gateway API, Karpenter, ArgoCD GitOps |
 | 🧱 **Infrastructure as Code** | OpenTofu / Terraform, Terragrunt, reusable module libraries |
 | 🪪 **Identity & access** | Entra ID SAML federation, ABAC, permission boundaries, delegated IAM admin |
-| 🤖 **AI infrastructure** | Secure, budget-controlled LLM gateways on Amazon Bedrock |
+| 🤖 **AI infrastructure** | Secure, budget-controlled LLM gateways and private LLM-powered applications on Amazon Bedrock |
 
 ---
 
@@ -34,11 +34,20 @@ I design and build secure, compliance-ready platforms on AWS: multi-account arch
 
 | Project | What it shows |
 |---|---|
+| [**aws-multi-tenant-platform-reference**]([REPO URL]) | OpenTofu + Terragrunt multi-account platform: EKS with Cilium, Transit Gateway, Network Firewall, Entra ID SAML → AWS with ABAC role elevation and permission boundaries, and OIDC-based CI/CD with drift detection |
+| [**platform-gitops-reference**]([REPO URL]) | Multi-tenant ArgoCD GitOps: tenant-isolated AppProjects and ApplicationSets, gated dev → prod promotion, Karpenter node pools, and Kyverno policy enforcement |
+| [**litellm-bedrock-gateway-eks**]([REPO URL]) | LLM gateway on EKS with per-user budgets, rate limits, and IRSA scoped to specific Bedrock models |
+| [**aws-private-llm-app-reference**]([REPO URL]) | CloudFront + WAF in front of a fully private ALB (VPC Origins), NAT-free Fargate, Bedrock over VPC endpoints, Cognito PKCE, and a Step Functions refresh pipeline |
+| [**aws-private-egress-network-firewall**]([REPO URL]) | Zero-internet-egress workloads with domain-allowlisted Network Firewall and SSM-only access |
+| [**jira-dc-aws-iac-reference**]([REPO URL]) | Terraform + Ansible deployment with WAFv2, KMS everywhere, SSM-only access, and a parallel-standup migration with rollback |
+
+---|---|
 | [**eks-gitops-platform-reference**]([REPO URL]) | OpenTofu + Terragrunt EKS platform with Cilium default-deny, Pod Security restricted, External Secrets, and ArgoCD App-of-Apps |
 | [**aws-saml-abac-federation**]([REPO URL]) | Entra ID → standalone AWS accounts with session-tag ABAC, permission boundaries, and session-revocation automation |
 | [**litellm-bedrock-gateway-eks**]([REPO URL]) | LLM gateway on EKS with per-user budgets, rate limits, and IRSA scoped to specific Bedrock models |
 | [**github-actions-oidc-terraform**]([REPO URL]) | Reusable workflows: OIDC auth, plan/apply, drift detection with auto-issues, canary-gated rollouts |
 | [**aws-private-egress-network-firewall**]([REPO URL]) | Zero-internet-egress workloads with domain-allowlisted Network Firewall and SSM-only access |
+| [**aws-private-llm-app-reference**]([REPO URL]) | CloudFront + WAF in front of a fully private ALB (VPC Origins), NAT-free Fargate, Bedrock over VPC endpoints, Cognito PKCE, and a Step Functions refresh pipeline |
 
 ---
 
